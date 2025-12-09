@@ -1,0 +1,33 @@
+### Create exercise
+POST http://localhost:3000/exercises
+Content-Type: application/json
+
+{
+  "name": "Push Ups",
+  "reps": 15,
+  "weight": 0,
+  "unit": "lbs",
+  "date": "2025-08-27"
+}
+
+### Get all exercises
+GET http://localhost:3000/exercises
+
+### Get exercise by id
+# Replace {{id}} with a real _id from the previous responses
+GET http://localhost:3000/exercises/{{id}}
+
+### Update exercise
+PUT http://localhost:3000/exercises/{{id}}
+Content-Type: application/json
+
+{
+  "name": "Push Ups",
+  "reps": 20,
+  "weight": 0,
+  "unit": "lbs",
+  "date": "2025-08-28"
+}
+
+### Delete exercise
+DELETE http://localhost:3000/exercises/{{id}}
